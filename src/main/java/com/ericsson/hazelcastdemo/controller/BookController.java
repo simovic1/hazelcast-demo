@@ -7,7 +7,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@RestController("/books")
+@RestController
+@RequestMapping("/books")
 public class BookController {
     private final BookService bookService;
 
